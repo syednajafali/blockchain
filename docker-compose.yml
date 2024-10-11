@@ -1,0 +1,17 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    environment:
+      MYSQL_HOST: localhost
+      MYSQL_PORT: 3308
+      MYSQL_USER: root
+      MYSQL_PASSWORD: ''
+      MYSQL_DATABASE: crypto_monitoring
+      MORALIS_API_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6IjA4NWEyYjI1LTFlODMtNGY5Mi1iMzFiLWI4OTlhY2RiOWIyYyIsIm9yZ0lkIjoiNDExMjkzIiwidXNlcklkIjoiNDIyNjY4IiwidHlwZUlkIjoiNjg1N2ExZTQtZDM5Ny00NTg4LWFlYjMtZjUzNjY1NTA4MjNjIiwidHlwZSI6IlBST0pFQ1QiLCJpYXQiOjE3Mjg2Mjc2NzgsImV4cCI6NDg4NDM4NzY3OH0.U5bUyL_9cczYLZJxYeghpL8fKa0EpKOD2x4H8Z82oww
+      EMAIL_SERVICE: gmail
+      EMAIL_USER: youremail@gmail.com
+      EMAIL_PASS: yourpassword
